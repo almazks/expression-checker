@@ -1,0 +1,13 @@
+{
+    "name": "almaz/test",
+    "authors": [
+        {
+            "name": "Almaz",
+            "email": "almazrt@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Test\\": "classes/"}
+    }
+}
