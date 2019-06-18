@@ -25,7 +25,7 @@ class ExpressionChecker
         return array_pop($this->expressionStack);
     }
 
-    public function check($expression)
+    public function isCorrect($expression)
     {
         $strlen = strlen($expression);
 
