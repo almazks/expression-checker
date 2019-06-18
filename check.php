@@ -14,17 +14,13 @@ $tagContainer->addTag('[', ']');
 $expressionChecker = new ExpressionChecker($tagContainer);
 
 $expression = '(1+2))-(([2*7]))*{5-3}';
-echo "Is the expression {$expression} correct? ", $expressionChecker->isCorrect($expression) ? 'Yes' : 'No';
-echo "\n";
+echo "Is the expression {$expression} correct? ", $expressionChecker->isCorrect($expression) ? 'Yes' : 'No', "\n";
 
 $expression = '(1+2)-(([2*7])])*{{5-3}';
-echo "Is the expression {$expression} correct? ", $expressionChecker->isCorrect($expression) ? 'Yes' : 'No';
-echo "\n";
+echo "Is the expression {$expression} correct? ", $expressionChecker->isCorrect($expression) ? 'Yes' : 'No', "\n";
 
 $expression = '(1+2)-(([2*7]))*{5-3}';
-echo "Is the expression {$expression} correct? ", $expressionChecker->isCorrect($expression) ? 'Yes' : 'No';
-echo "\n";
+echo "Is the expression {$expression} correct? ", $expressionChecker->isCorrect($expression) ? 'Yes' : 'No', "\n";
 
 $expression = '[[(((1+2)-{{(([2*7]))*{5-3}}}))]]';
-echo "Is the expression {$expression} correct? ", $expressionChecker->isCorrect($expression) ? 'Yes' : 'No';
-echo "\n";
+echo "Is the expression {$expression} correct? ", $expressionChecker->isCorrect($expression) ? 'Yes' : 'No', "\n";
